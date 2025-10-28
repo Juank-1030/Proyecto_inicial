@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Store
+comment0.text=\r\n\ Store\ representa\ una\ tienda\ compuesta\ por\ una\ base\ rectangular\ y\ un\ techo\r\n\ triangular.\r\n\ El\ color\ de\ la\ base\ se\ elige\ aleatoriamente\ entre\ varios.\r\n\ Proporciona\ m\u00E9todos\ para\ cambiar\ color,\ mover\ y\ visibilidad.\r\n\r\n\ Extiende\ StoreAbstracto\ para\ heredar\ toda\ la\ l\u00F3gica\ de\ movimiento\ sin\r\n\ duplicaci\u00F3n.\r\n
+comment1.params=visible
+comment1.target=Store(boolean)
+comment1.text=\r\n\ Construye\ la\ tienda\ en\ una\ posici\u00F3n\ por\ defecto.\r\n\ \r\n\ @param\ visible\ true\ para\ hacerla\ visible\ inmediatamente\r\n
+comment2.params=newColor
+comment2.target=void\ changeColor(java.lang.String)
+comment2.text=\r\n\ Cambia\ el\ color\ de\ la\ base\ de\ la\ tienda.\r\n\ \u2705\ Se\ hereda\ de\ StoreAbstracto,\ pero\ Store\ personaliza\ para\ actualizar\ base\r\n\ \r\n\ @param\ newColor\ nuevo\ color\ (string)\r\n
+comment3.params=
+comment3.target=void\ makeVisible()
+comment3.text=\r\n\ Hace\ visible\ la\ tienda\ (si\ no\ lo\ estaba).\r\n\ \u2705\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ de\ Store\r\n
+comment4.params=
+comment4.target=void\ makeInvisible()
+comment4.text=\r\n\ Hace\ invisible\ la\ tienda\ (si\ estaba\ visible).\r\n\ \u2705\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ de\ Store\r\n
+comment5.params=robotTenges\ storeTenges
+comment5.target=boolean\ puedeRecibirRobot(int,\ int)
+comment5.text=\r\n\ POLIMORFISMO\:\ Store\ normal\ siempre\ acepta\ todos\ los\ robots.\r\n\ Este\ override\ documenta\ el\ comportamiento\ est\u00E1ndar.\r\n\ \r\n\ \u2705\ MEDIATOR\:\ Store\ solo\ recibe\ tenges,\ no\ conoce\ al\ Robot\r\n\ \r\n\ @param\ robotTenges\ tenges\ actuales\ del\ robot\r\n\ @param\ storeTenges\ tenges\ de\ la\ tienda\r\n\ @return\ true\ (Store\ normal\ siempre\ acepta)\r\n
+comment6.params=tengesRecolectados
+comment6.target=int\ procesarTransferencia(int)
+comment6.text=\r\n\ POLIMORFISMO\:\ Store\ normal\ transfiere\ exactamente\ lo\ recolectado.\r\n\ Este\ override\ documenta\ el\ comportamiento\ est\u00E1ndar.\r\n\ \r\n\ @param\ tengesRecolectados\ cantidad\ de\ tenges\ recolectados\r\n\ @return\ cantidad\ de\ tenges\ a\ transferir\ (100%)\r\n
+numComments=7

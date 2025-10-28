@@ -1,0 +1,15 @@
+# AppMap ignore patterns
+bin/
+*.class
+*.ctxt
+*.backup
+.git/
+node_modules/
+doc/
+lib/
+tmp/
+output/
+.vscode/
+*.iml
+*.puml
+*.log

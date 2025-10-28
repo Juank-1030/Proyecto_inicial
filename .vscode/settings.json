@@ -1,0 +1,36 @@
+{
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "${JAVA_HOME}",
+            "default": true
+        }
+    ],
+    "java.project.sourcePaths": ["."],
+    "java.project.outputPath": "target/classes",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "${JAVA_HOME}/lib/*.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.format.enabled": true,
+    "java.saveActions.organizeImports": true,
+    
+    "java.test.config": {
+        "workingDirectory": "${workspaceFolder}",
+        "projectName": "silkroad-project",
+        "preLaunchTask": "maven: clean test-compile"
+    },
+    "java.test.defaultConfig": "JUnit",
+    "java.test.report.showAfterExecution": true,
+    
+    "appMap.commandLineOptions": "",
+    "appMap.enabled": true,
+    "appMap.useAppmapAgent": false,
+    "appMap.recordingMode": "all",
+    
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+        "editor.formatOnSave": false
+    }
+}

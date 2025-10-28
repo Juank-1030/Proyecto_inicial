@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=TenderRobot
+comment0.text=\r\n\ TenderRobot\ es\ un\ robot\ especializado\ que\ toma\ solo\ la\ MITAD\ del\ dinero\r\n\ que\ encuentra\ en\ las\ tiendas\ que\ visita.\r\n\ \r\n\ Caracter\u00EDsticas\:\r\n\ -\ Extrae\ 50%\ del\ dinero\ (en\ lugar\ del\ 100%\ del\ robot\ normal)\r\n\ -\ Deja\ la\ otra\ mitad\ en\ la\ tienda\r\n\ -\ Hereda\ toda\ la\ l\u00F3gica\ de\ movimiento\ de\ RobotAbstracto\r\n\ -\ Tama\u00F1o\ y\ apariencia\ igual\ al\ Robot\ normal\ (15\u00D715)\r\n\ \r\n\ @author\ Sistema\ SilkRoad\ -\ Ciclo\ 3\r\n\ @version\ 1.0\r\n
+comment1.params=visible
+comment1.target=TenderRobot(boolean)
+comment1.text=\r\n\ Construye\ un\ robot\ TenderRobot\ con\ tama\u00F1o\ 15\u00D715\ y\ color\ aleatorio.\r\n\ \r\n\ @param\ visible\ true\ para\ hacerlo\ visible\ tras\ construir\r\n
+comment2.params=
+comment2.target=void\ updateParts()
+comment2.text=\r\n\ Actualiza\ las\ posiciones\ de\ las\ partes\ del\ robot\ basadas\ en\ positionX/Y\r\n\ actuales\ (igual\ que\ Robot\ normal).\r\n
+comment3.params=
+comment3.target=void\ makeVisible()
+comment3.text=\r\n\ Hace\ visible\ el\ robot\ (todas\ sus\ partes)\ si\ no\ lo\ est\u00E1.\r\n
+comment4.params=
+comment4.target=void\ makeInvisible()
+comment4.text=\r\n\ Hace\ invisible\ el\ robot\ (todas\ sus\ partes)\ si\ est\u00E1\ visible.\r\n
+comment5.params=tengesDisponibles
+comment5.target=int\ recolectarTenges(int)
+comment5.text=\r\n\ POLIMORFISMO\:\ TenderRobot\ recolecta\ SOLO\ LA\ MITAD\ de\ los\ tenges.\r\n\ Este\ override\ implementa\ el\ comportamiento\ especial\ del\ TenderRobot.\r\n\ \r\n\ \u2705\ MEDIATOR\:\ Robot\ solo\ recibe\ cantidad,\ no\ conoce\ a\ Store\r\n\ \r\n\ @param\ tengesDisponibles\ cantidad\ total\ de\ tenges\ en\ la\ tienda\r\n\ @return\ la\ MITAD\ de\ los\ tenges\ disponibles\r\n
+comment6.params=tengesRecolectados\ distancia
+comment6.target=int\ calcularGanancia(int,\ int)
+comment6.text=\r\n\ FASE\ 4\ OPCI\u00D3N\ B\:\ TenderRobot\ calcula\ ganancia\ con\ su\ l\u00F3gica\ especial.\r\n\ Como\ toma\ menos\ dinero,\ su\ ganancia\ es\ proporcional\ a\ la\ cantidad\ recolectada.\r\n\ Ganancia\ \=\ tenges\ recolectados\ (50%\ del\ disponible)\ -\ distancia\ recorrida\r\n\ \r\n\ @param\ tengesRecolectados\ cantidad\ de\ tenges\ obtenidos\ (ya\ es\ 50%)\r\n\ @param\ distancia\ metros\ recorridos\r\n\ @return\ ganancia\ neta\ del\ TenderRobot\ (puede\ ser\ negativa)\r\n
+numComments=7

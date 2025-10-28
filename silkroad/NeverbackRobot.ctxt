@@ -1,0 +1,40 @@
+#BlueJ class context
+comment0.target=NeverbackRobot
+comment0.text=\r\n\ NeverbackRobot\ es\ un\ robot\ especial\ que\ solo\ se\ mueve\ en\ una\ direcci\u00F3n.\r\n\ \r\n\ Comportamiento\:\r\n\ -\ Si\ realiza\ un\ movimiento\ POSITIVO\ primero,\ solo\ aceptar\u00E1\ movimientos\r\n\ POSITIVOS\r\n\ -\ Si\ realiza\ un\ movimiento\ NEGATIVO\ primero,\ solo\ aceptar\u00E1\ movimientos\r\n\ NEGATIVOS\r\n\ -\ Una\ vez\ establecida\ la\ direcci\u00F3n,\ no\ puede\ cambiar\ (de\ ah\u00ED\ el\ nombre\r\n\ "Neverback")\r\n\ -\ Intenta\ rechazar\ movimientos\ en\ la\ direcci\u00F3n\ opuesta\r\n\ \r\n\ Visualmente\:\ Robot\ tama\u00F1o\ 18\u00D718\ con\ color\ verde,\ para\ diferenciarlo\ del\ Robot\r\n\ est\u00E1ndar\r\n\ \r\n\ @author\ Sistema\ de\ Robots\ Especiales\ -\ Ciclo\ 3\r\n\ @version\ 1.0\r\n
+comment1.params=visible
+comment1.target=NeverbackRobot(boolean)
+comment1.text=\r\n\ Construye\ un\ NeverbackRobot\ con\ tama\u00F1o\ 18\u00D718\ y\ color\ verde.\r\n\ \r\n\ @param\ visible\ true\ para\ hacerlo\ visible\ tras\ construir\r\n
+comment10.params=tengesDisponibles
+comment10.target=int\ recolectarTenges(int)
+comment10.text=\r\n\ POLIMORFISMO\:\ NeverbackRobot\ recolecta\ TODOS\ los\ tenges\ (como\ normal).\r\n\ Este\ override\ documenta\ que\ NeverbackRobot\ no\ tiene\ restricciones\ en\ recolecci\u00F3n.\r\n\ \r\n\ \u2705\ MEDIATOR\:\ Robot\ solo\ recibe\ cantidad,\ no\ conoce\ a\ Store\r\n\ \r\n\ @param\ tengesDisponibles\ cantidad\ de\ tenges\ en\ la\ tienda\r\n\ @return\ TODOS\ los\ tenges\ disponibles\r\n
+comment11.params=tengesRecolectados\ distancia
+comment11.target=int\ calcularGanancia(int,\ int)
+comment11.text=\r\n\ FASE\ 4\ OPCI\u00D3N\ B\:\ NeverbackRobot\ calcula\ ganancia\ con\ su\ l\u00F3gica\ especial.\r\n\ NeverbackRobot\ es\ eficiente\:\ reduce\ el\ costo\ de\ distancia\ en\ 10%\ por\ estar\ bloqueado.\r\n\ Ganancia\ \=\ tenges\ recolectados\ -\ (distancia\ *\ 0.9)\r\n\ \r\n\ @param\ tengesRecolectados\ cantidad\ de\ tenges\ obtenidos\r\n\ @param\ distancia\ metros\ recorridos\r\n\ @return\ ganancia\ neta\ mejorada\ por\ eficiencia\ de\ direcci\u00F3n\ \u00FAnica\r\n
+comment12.params=
+comment12.target=java.lang.String\ obtenerMensajeRechazo()
+comment12.text=\r\n\ Retorna\ el\ mensaje\ de\ rechazo\ cuando\ NeverbackRobot\ est\u00E1\ bloqueado.\r\n\ Proporciona\ informaci\u00F3n\ sobre\ la\ direcci\u00F3n\ bloqueada\ y\ el\ tipo\ de\ movimiento\ intentado.\r\n\ \r\n\ @return\ mensaje\ personalizado\ explicando\ el\ bloqueo\ de\ direcci\u00F3n\r\n
+comment2.params=
+comment2.target=int\ getDirectionLocked()
+comment2.text=\r\n\ Devuelve\ la\ direcci\u00F3n\ bloqueada\ del\ robot.\r\n\ \r\n\ @return\ 0\ si\ sin\ bloquear,\ 1\ si\ positivo,\ -1\ si\ negativo\r\n
+comment3.params=direction
+comment3.target=void\ setDirectionLocked(int)
+comment3.text=\r\n\ Establece\ la\ direcci\u00F3n\ inicial\ del\ robot.\r\n\ Una\ vez\ establecida,\ no\ puede\ cambiar.\r\n\ \r\n\ @param\ direction\ 1\ para\ positivo,\ -1\ para\ negativo\r\n
+comment4.params=meters
+comment4.target=boolean\ isMovementAllowed(int)
+comment4.text=\r\n\ Valida\ si\ un\ movimiento\ es\ permitido\ seg\u00FAn\ la\ direcci\u00F3n\ bloqueada.\r\n\ Si\ directionLocked\ es\ 0\ (sin\ bloquear),\ permite\ cualquier\ movimiento.\r\n\ Si\ directionLocked\ es\ 1\ (positivo),\ solo\ permite\ meters\ >\ 0.\r\n\ Si\ directionLocked\ es\ -1\ (negativo),\ solo\ permite\ meters\ <\ 0.\r\n\ \r\n\ @param\ meters\ desplazamiento\ propuesto\r\n\ @return\ true\ si\ el\ movimiento\ es\ permitido,\ false\ si\ est\u00E1\ bloqueado\r\n
+comment5.params=meters
+comment5.target=void\ lockDirection(int)
+comment5.text=\r\n\ Bloquea\ la\ direcci\u00F3n\ del\ robot\ seg\u00FAn\ el\ signo\ del\ movimiento.\r\n\ Si\ el\ robot\ nunca\ se\ ha\ movido\ (directionLocked\ \=\=\ 0),\ establece\ la\ direcci\u00F3n\r\n\ seg\u00FAn\ el\ signo\ de\ meters.\r\n\ \r\n\ @param\ meters\ desplazamiento\ que\ determina\ la\ direcci\u00F3n\r\n
+comment6.params=
+comment6.target=void\ resetDirection()
+comment6.text=\r\n\ Reinicia\ el\ bloqueo\ de\ direcci\u00F3n\ del\ robot.\r\n\ Utilizado\ cuando\ el\ robot\ es\ devuelto\ a\ su\ posici\u00F3n\ original\ (en\ reboot).\r\n
+comment7.params=
+comment7.target=void\ updateParts()
+comment7.text=\r\n\ Actualiza\ las\ posiciones\ de\ las\ partes\ del\ robot\ basadas\ en\ positionX/Y\r\n\ actuales.\r\n\ NeverbackRobot\ es\ un\ poco\ m\u00E1s\ grande\ (18\u00D718)\ para\ ser\ visualmente\ distintivo.\r\n
+comment8.params=
+comment8.target=void\ makeVisible()
+comment8.text=\r\n\ Hace\ visible\ el\ robot\ en\ la\ pantalla.\r\n
+comment9.params=
+comment9.target=void\ makeInvisible()
+comment9.text=\r\n\ Oculta\ el\ robot\ de\ la\ pantalla.\r\n
+numComments=13

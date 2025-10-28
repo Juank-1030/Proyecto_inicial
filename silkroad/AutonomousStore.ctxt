@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=AutonomousStore
+comment0.text=\r\n\ AutonomousStore\:\ Una\ tienda\ aut\u00F3noma\ que\ es\ diferenciable\ de\ una\ tienda\r\n\ normal.\r\n\ \r\n\ Hereda\ toda\ la\ l\u00F3gica\ de\ movimiento,\ visibilidad\ y\ comportamiento\ de\r\n\ StoreAbstracto.\r\n\ SilkRoad\ es\ responsable\ de\ asignar\ una\ posici\u00F3n\ aleatoria\ a\ esta\ tienda\r\n\ usando\ instanceof\ para\ identificarla.\r\n\r\n\ @author\ Sistema\ de\ Herencia\ -\ Ciclo\ 3\r\n\ @version\ 1.0\r\n
+comment1.params=visible
+comment1.target=AutonomousStore(boolean)
+comment1.text=\r\n\ Construye\ una\ tienda\ aut\u00F3noma\ con\ dimensiones\ est\u00E1ndar\ y\ color\ aleatorio.\r\n\ \r\n\ @param\ visible\ true\ para\ hacerla\ visible\ tras\ construir\r\n
+comment2.params=newColor
+comment2.target=void\ changeColor(java.lang.String)
+comment2.text=\r\n\ Cambia\ el\ color\ de\ la\ base\ de\ la\ tienda.\r\n\ \u2705\ Se\ hereda\ de\ StoreAbstracto,\ pero\ personaliza\ para\ actualizar\ base\r\n\ \r\n\ @param\ newColor\ nuevo\ color\ (string)\r\n
+comment3.params=
+comment3.target=void\ makeVisible()
+comment3.text=\r\n\ Hace\ visible\ la\ tienda\ (si\ no\ lo\ estaba).\r\n\ \u2705\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ de\ AutonomousStore\r\n
+comment4.params=
+comment4.target=void\ makeInvisible()
+comment4.text=\r\n\ Hace\ invisible\ la\ tienda\ (si\ estaba\ visible).\r\n\ \u2705\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ de\ AutonomousStore\r\n
+numComments=5

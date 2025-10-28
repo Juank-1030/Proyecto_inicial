@@ -1,0 +1,86 @@
+@startuml placeStore_normal_secuencia
+!theme plain
+skinparam sequenceArrowThickness 2
+skinparam ParticipantBackgroundColor #E6F3FF
+skinparam ActorBackgroundColor #FFE6E6
+
+actor Usuario
+participant "SilkRoad" as SR
+participant "StoreAbstracto" as SA
+participant "Road" as RD
+participant "JOptionPane" as JOP
+
+Usuario -> SR: placeStore(location, tenges)
+activate SR
+
+SR -> SR: crearTienda("normal")
+activate SR
+SR -> SA: new Store(this.visible)
+activate SA
+SA --> SR: store object
+deactivate SA
+deactivate SR
+
+SR -> SR: addStoreToLocation(store, "normal", location, tenges)
+activate SR
+
+SR -> SA: necesitaPosicionAleatoria()
+activate SA
+SA --> SR: false
+deactivate SA
+
+SR -> SR: validar location
+SR -> SR: validar storeRefs[location] == null
+
+SR -> SR: storeRefs[location] = store
+SR -> SR: stores[location][0] = location
+SR -> SR: stores[location][1] = tenges
+SR -> SR: originalStoreTenges[location] = tenges
+SR -> SR: maxProfit += tenges
+SR -> SR: updateProgressBar()
+
+alt visible == true AND road != null
+    SR -> RD: assignStore(store)
+    activate RD
+    deactivate RD
+    
+    SR -> RD: assignObjectPosition(location, "store")
+    activate RD
+    deactivate RD
+    
+    SR -> SA: makeVisible()
+    activate SA
+    SA --> SR: (renders visually)
+    deactivate SA
+end
+
+SR -> JOP: showMessageDialog(...)
+activate JOP
+JOP --> Usuario: "Tienda normal colocada en casilla X con Y tenges"
+deactivate JOP
+
+SR -> SR: transferTengesIfCoincide(0)
+SR -> SR: lastOperationOK = true
+
+deactivate SR
+deactivate SR
+deactivate SR
+
+note right of SR
+  **Flujo del método placeStore(location, tenges)**
+  1. Delega a placeStore("normal", location, tenges)
+  2. Crea Store mediante polimorfismo
+  3. Valida ubicación
+  4. Posiciona y registra tienda
+  5. Actualiza visualización
+  6. Notifica usuario
+end note
+
+note right of SA
+  **Polimorfismo**
+  - Store.necesitaPosicionAleatoria() = false
+  - AutonomousStore.necesitaPosicionAleatoria() = true
+  - Cada subclase decide su lógica
+end note
+
+@enduml

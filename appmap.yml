@@ -1,0 +1,128 @@
+name: SilkRoad_Proyecto_Ciclo3
+language: java
+version: 1.0
+appmap_dir: tmp/appmap
+
+# ====================================
+# PAQUETES A MONITOREAR
+# ====================================
+packages:
+  - path: silkroad
+    shallow: false
+    labels:
+      - business-logic
+      - test
+    
+  - path: shapes
+    shallow: false
+    labels:
+      - visualization
+
+# ====================================
+# EXCLUSIONES (NO REGISTRAR)
+# ====================================
+exclude_paths:
+  - lib
+  - bin
+  - doc
+  - output
+  - .vscode
+  - .git
+  - node_modules
+  - java
+  - sun
+  - jdk
+  
+exclude_patterns:
+  - ".*\\.class$"
+  - ".*\\.ctxt$"
+  - ".*~$"
+  - ".*backup.*"
+  - ".*\\.jar$"
+
+# ====================================
+# CONFIGURACIÓN DE RECORDING PARA TESTS
+# ====================================
+record_methods:
+  - class: silkroad.AppMapFullTest
+    methods:
+      - testCrearSilkRoad
+      - testRobots
+      - testTiendas
+      - testPlaceRobot
+      - testPlaceStore
+      - testMovimientos
+      - testPolimorfismo
+      - testContest
+      - testFlujoBusiness
+      - main
+  
+  - class: silkroad.SilkRoad
+    methods:
+      - placeRobot
+      - placeStore
+      - moveRobot
+      - moveRobots
+      - profit
+      - emptiedStores
+      - resupplyStores
+      - returnRobots
+      - makeVisible
+      - makeInvisible
+      - finish
+  
+  - class: silkroad.RobotAbstracto
+    methods:
+      - transferirDinero
+      - isMovementAllowed
+      - resetDirection
+      - obtenerMensajeRechazo
+  
+  - class: silkroad.StoreAbstracto
+    methods:
+      - recibirRobot
+      - puedeRecibirRobot
+      - necesitaPosicionAleatoria
+  
+  - class: silkroad.Robot
+    methods:
+      - transferirDinero
+  
+  - class: silkroad.TenderRobot
+    methods:
+      - transferirDinero
+  
+  - class: silkroad.NeverbackRobot
+    methods:
+      - isMovementAllowed
+      - resetDirection
+  
+  - class: silkroad.Store
+    methods:
+      - recibirRobot
+      - puedeRecibirRobot
+  
+  - class: silkroad.FighterStore
+    methods:
+      - puedeRecibirRobot
+  
+  - class: silkroad.CasinoStore
+    methods:
+      - recibirRobot
+  
+  - class: silkroad.AutonomousStore
+    methods:
+      - necesitaPosicionAleatoria
+      - recibirRobot
+  
+  - class: silkroad.SilkRoadContest
+    methods:
+      - solve
+
+# ====================================
+# CONFIGURACIÓN PARA IDENTIFICAR TESTS
+# ====================================
+test_frameworks:
+  - name: AppMapFullTest
+    class_name_pattern: ".*Test$"
+    method_name_pattern: "^test.*"

@@ -1,0 +1,140 @@
+package silkroad;
+
+import shapes.*;
+import java.util.Random; // Para generar colores aleatorios
+
+/**
+ * Store representa una tienda compuesta por una base rectangular y un techo
+ * triangular.
+ * El color de la base se elige aleatoriamente entre varios.
+ * Proporciona métodos para cambiar color, mover y visibilidad.
+ */
+public class Store {
+    private int positionX;
+    private int positionY;
+    private int sizeRectangle;
+    private int sizeTriangle;
+    private String color;
+
+    private Rectangle base;
+    private Triangle roof;
+    private boolean isVisible;
+
+    /**
+     * Construye la tienda en una posición por defecto.
+     * 
+     * @param visible true para hacerla visible inmediatamente
+     */
+    public Store(boolean visible) {
+        this.positionX = 54;
+        this.positionY = 45;
+        this.sizeRectangle = 20;
+        this.sizeTriangle = 20;
+        this.color = getRandomColor();
+
+        base = new Rectangle();
+        base.changeColor(color);
+        base.changeSize(sizeRectangle / 2, sizeRectangle);
+        base.setPosition(positionX, positionY);
+
+        roof = new Triangle();
+        roof.changeColor("brown");
+        roof.changeSize(sizeTriangle / 2, sizeTriangle);
+        roof.setPosition(positionX + 10, positionY - sizeTriangle / 2);
+        if (visible) {
+            makeVisible();
+        }
+        this.isVisible = visible;
+    }
+
+    /**
+     * Genera un color aleatorio para la base.
+     * 
+     * @return nombre del color
+     */
+    private String getRandomColor() {
+        String[] colors = { "red", "blue", "green", "yellow", "magenta", "cyan", "purple", "orange" };
+        Random rand = new Random();
+        return colors[rand.nextInt(colors.length)];
+    }
+
+    /**
+     * Cambia el color de la base de la tienda.
+     * 
+     * @param newColor nuevo color (string)
+     */
+    public void changeColor(String newColor) {
+        this.color = newColor;
+        base.changeColor(newColor);
+    }
+
+    /**
+     * Traslada la tienda a coordenadas absolutas y la hace visible.
+     * 
+     * @param x nueva coordenada X
+     * @param y nueva coordenada Y
+     */
+    public void moveTo(int x, int y) {
+        positionX = x;
+        positionY = y;
+        base.setPosition(positionX, positionY);
+        roof.setPosition(positionX + 10, positionY - sizeTriangle / 2);
+        base.makeVisible();
+        roof.makeVisible();
+    }
+
+    /**
+     * Hace visible la tienda (si no lo estaba).
+     */
+    public void makeVisible() {
+        if (!isVisible) {
+            base.makeVisible();
+            roof.makeVisible();
+            isVisible = true;
+        }
+    }
+
+    /**
+     * Hace invisible la tienda (si estaba visible).
+     */
+    public void makeInvisible() {
+        if (isVisible) {
+            base.makeInvisible();
+            roof.makeInvisible();
+            isVisible = false;
+        }
+    }
+
+    /**
+     * @return posición X actual
+     */
+    public int getX() {
+        return positionX;
+    }
+
+    /**
+     * @return posición Y actual
+     */
+    public int getY() {
+        return positionY;
+    }
+
+    /**
+     * Reposiciona la tienda usando desplazamiento relativo.
+     * 
+     * @param x nueva coordenada X
+     * @param y nueva coordenada Y
+     */
+    public void setPosition(int x, int y) {
+        int dx = x - this.positionX;
+        int dy = y - this.positionY;
+
+        this.positionX = x;
+        this.positionY = y;
+
+        base.moveHorizontal(dx);
+        base.moveVertical(dy);
+        roof.moveHorizontal(dx);
+        roof.moveVertical(dy);
+    }
+}

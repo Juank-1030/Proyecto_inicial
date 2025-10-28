@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Robot
+comment0.text=\r\n\ Robot\ representa\ un\ robot\ est\u00E1ndar\ con\ tama\u00F1o\ 15\u00D715.\r\n\ Extiende\ RobotAbstracto\ para\ heredar\ toda\ la\ l\u00F3gica\ de\ movimiento\ sin\r\n\ duplicaci\u00F3n.\r\n\ \r\n\ \u2705\ Constructor\ SIMPLIFICADO\:\ solo\ 12\ l\u00EDneas\r\n\ \u2705\ Construcci\u00F3n\ visual\ centralizada\ en\ RobotAbstracto.initializeVisualParts()\r\n\ \u2705\ M\u00E9todos\ visuales\ espec\u00EDficos\:\ updateParts(),\ makeVisible(),\ makeInvisible()\r\n
+comment1.params=visible
+comment1.target=Robot(boolean)
+comment1.text=\r\n\ Construye\ un\ robot\ est\u00E1ndar\ con\ tama\u00F1o\ 15\u00D715\ y\ color\ aleatorio.\r\n\ \r\n\ \u2705\ Constructor\ SIMPLIFICADO\:\ solo\ define\ par\u00E1metros\r\n\ \u2705\ La\ construcci\u00F3n\ visual\ (ojos,\ boca,\ cabeza)\ est\u00E1\ en\ initializeVisualParts()\r\n\ \r\n\ @param\ visible\ true\ para\ hacerlo\ visible\ tras\ construir\r\n
+comment2.params=
+comment2.target=void\ updateParts()
+comment2.text=\r\n\ Actualiza\ las\ posiciones\ de\ las\ partes\ del\ robot\ basadas\ en\ positionX/Y\r\n\ actuales.\r\n\ \u2705\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ del\ Robot\ est\u00E1ndar\r\n
+comment3.params=
+comment3.target=void\ makeVisible()
+comment3.text=\r\n\ Hace\ visible\ el\ robot\ (todas\ sus\ partes)\ si\ no\ lo\ est\u00E1.\r\n
+comment4.params=
+comment4.target=void\ makeInvisible()
+comment4.text=\r\n\ Hace\ invisible\ el\ robot\ (todas\ sus\ partes)\ si\ est\u00E1\ visible.\r\n
+comment5.params=tengesDisponibles
+comment5.target=int\ recolectarTenges(int)
+comment5.text=\r\n\ POLIMORFISMO\:\ Robot\ normal\ recolecta\ TODOS\ los\ tenges.\r\n\ Este\ override\ documenta\ el\ comportamiento\ est\u00E1ndar.\r\n\ \r\n\ \u2705\ MEDIATOR\:\ Robot\ solo\ recibe\ cantidad,\ no\ conoce\ a\ Store\r\n\ \r\n\ @param\ tengesDisponibles\ cantidad\ de\ tenges\ en\ la\ tienda\r\n\ @return\ TODOS\ los\ tenges\ disponibles\r\n
+comment6.params=tengesRecolectados\ distancia
+comment6.target=int\ calcularGanancia(int,\ int)
+comment6.text=\r\n\ FASE\ 4\ OPCI\u00D3N\ B\:\ Robot\ normal\ calcula\ ganancia\ est\u00E1ndar.\r\n\ Ganancia\ \=\ tenges\ recolectados\ -\ distancia\ recorrida\r\n\ \r\n\ @param\ tengesRecolectados\ cantidad\ de\ tenges\ obtenidos\r\n\ @param\ distancia\ metros\ recorridos\r\n\ @return\ ganancia\ neta\ (puede\ ser\ negativa)\r\n
+numComments=7

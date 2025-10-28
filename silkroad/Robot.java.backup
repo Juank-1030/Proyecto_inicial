@@ -1,0 +1,185 @@
+package silkroad;
+
+/**
+ * Robot - clase de compatibilidad que delega a BasicRobot.
+ * Mantiene compatibilidad con código existente.
+ * Para extensibilidad, usar RobotAbstract como clase base.
+ */
+public class Robot extends BasicRobot {
+
+    /**
+     * Construye un robot con tamaño fijo y color aleatorio.
+     * 
+     * @param visible true para hacerlo visible tras construir
+     */
+    public Robot(boolean visible) {
+        this.size = 15;
+        this.positionX = 36;
+        this.positionY = 58;
+        this.color = getRandomColor();
+
+        String eyeAndMouthColor = (color.equals("black") || color.equals("brown")) ? "white" : "black";
+
+        robotHead = new Rectangle();
+        robotHead.changeColor(color);
+        robotHead.changeSize(size, size);
+        robotHead.setPosition(positionX, positionY);
+
+        int eyeSize = size / 6;
+        leftEye = new Circle();
+        leftEye.changeColor(eyeAndMouthColor);
+        leftEye.changeSize(eyeSize);
+        leftEye.setPosition(positionX + size - 14, positionY + size / 4);
+
+        rightEye = new Circle();
+        rightEye.changeColor(eyeAndMouthColor);
+        rightEye.changeSize(eyeSize);
+        rightEye.setPosition(positionX + size - 4, positionY + size / 4);
+
+        mouth = new Rectangle();
+        mouth.changeColor(eyeAndMouthColor);
+        mouth.changeSize(1, 10);
+        mouth.setPosition(positionX + size / 6, positionY + size - (size / 10) - 1);
+        if (visible) {
+            makeVisible();
+        }
+        this.isVisible = visible;
+    }
+
+    /**
+     * Selecciona un color aleatorio para el robot.
+     * 
+     * @return color elegido
+     */
+    private String getRandomColor() {
+        String[] colors = { "red", "blue", "green", "yellow", "magenta", "cyan", "black", "brown", "purple", "orange" };
+        Random rand = new Random();
+        return colors[rand.nextInt(colors.length)];
+    }
+
+    /**
+     * Mueve el robot a una posición específica mostrando el desplazamiento.
+     * 
+     * @param x nueva coordenada X
+     * @param y nueva coordenada Y
+     */
+    public void moveTo(int x, int y) {
+        makeVisible();
+        slowMoveTo(x, y);
+    }
+
+    /**
+     * Movimiento gradual del robot desde su posición actual hasta (targetX,
+     * targetY).
+     */
+    private void slowMoveTo(int targetX, int targetY) {
+        // 🔹 Diferencia entre la posición actual y el destino
+        int deltaX = targetX - positionX;
+        int deltaY = targetY - positionY;
+
+        // 🔹 Número de pasos = distancia máxima en px
+        int steps = Math.max(Math.abs(deltaX), Math.abs(deltaY));
+        if (steps == 0)
+            return; // ya está en destino
+
+        // 🔹 Control de velocidad (mayor = más rápido)
+        int speed = 5;
+
+        // 🔹 Incremento por paso (positivo o negativo)
+        double stepX = (double) deltaX / steps * speed;
+        double stepY = (double) deltaY / steps * speed;
+
+        for (int i = 0; i < steps; i += speed) {
+            positionX += stepX;
+            positionY += stepY;
+            updateParts();
+        }
+
+        // 🔹 Asegurar que termine exactamente en el destino
+        positionX = targetX;
+        positionY = targetY;
+        updateParts();
+    }
+
+    /**
+     * Actualiza las posiciones de las partes del robot basadas en positionX/Y
+     * actuales.
+     */
+    private void updateParts() {
+        robotHead.setPosition(positionX, positionY);
+        leftEye.setPosition(positionX + size - 14, positionY + size / 4);
+        rightEye.setPosition(positionX + size - 4, positionY + size / 4);
+        mouth.setPosition(positionX + size / 6, positionY + size - (size / 10) - 1);
+
+        robotHead.makeVisible();
+        leftEye.makeVisible();
+        rightEye.makeVisible();
+        mouth.makeVisible();
+    }
+
+    /**
+     * Coloca el robot directamente en una ubicación específica sin animación.
+     * 
+     * @param x coordenada X donde aparecerá
+     * @param y coordenada Y donde aparecerá
+     */
+    public void placeTo(int x, int y) {
+        positionX = x;
+        positionY = y;
+
+        // Actualizar posiciones de todas las partes
+        robotHead.setPosition(positionX, positionY);
+        leftEye.setPosition(positionX + size - 14, positionY + size / 4);
+        rightEye.setPosition(positionX + size - 4, positionY + size / 4);
+        mouth.setPosition(positionX + size / 6, positionY + size - (size / 10) - 1);
+
+        // Asegurar que todas las partes sean visibles
+        robotHead.makeVisible();
+        leftEye.makeVisible();
+        rightEye.makeVisible();
+        mouth.makeVisible();
+
+        isVisible = true;
+    }
+
+    /**
+     * Hace visible el robot (todas sus partes) si no lo está.
+     */
+    public void makeVisible() {
+        if (!isVisible) {
+            robotHead.makeVisible();
+            leftEye.makeVisible();
+            rightEye.makeVisible();
+            mouth.makeVisible();
+            isVisible = true;
+        }
+    }
+
+    /**
+     * Hace invisible el robot (todas sus partes) si está visible.
+     */
+    public void makeInvisible() {
+        if (isVisible) {
+            robotHead.makeInvisible();
+            leftEye.makeInvisible();
+            rightEye.makeInvisible();
+            mouth.makeInvisible();
+            isVisible = false;
+        }
+    }
+
+    /**
+     * @return coordenada X actual.
+     */
+    public int getX() {
+        return positionX;
+    }
+
+    /**
+     * @return coordenada Y actual.
+     */
+    public int getY() {
+        return positionY;
+    }
+
+}

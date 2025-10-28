@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SilkRoadContestTest
+comment0.text=\r\n\ PRUEBAS\ DE\ CONTEST\ -\ SilkRoadContestTest\r\n\ Valida\ la\ funcionalidad\ de\ contest\r\n
+comment1.params=
+comment1.target=void\ shouldSolveBasicContest()
+comment2.params=
+comment2.target=void\ shouldSolveMultipleDays()
+comment3.params=
+comment3.target=void\ shouldSolveComplexContest()
+numComments=4
