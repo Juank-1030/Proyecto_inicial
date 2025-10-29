@@ -6,34 +6,13 @@ import org.junit.Before;
 import silkroad.*;
 
 /**
- * ✅ SUITE DE PRUEBAS EXHAUSTIVA - Proyecto SilkRoad Ciclo 3
- * 
- * Prueba ABSOLUTAMENTE TODO:
- * - ✅ Clases abstractas (RobotAbstracto, StoreAbstracto) y sus métodos
- * - ✅ Clases heredadas (Robot, NeverbackRobot, TenderRobot) con comportamientos específicos
- * - ✅ Tiendas (Store, FighterStore, CasinoStore, AutonomousStore) con sus reglas
- * - ✅ SilkRoad: TODOS los métodos públicos y privados (indirectamente)
- * - ✅ SilkRoadContest: solve() y simulate()
- * - ✅ Polimorfismo completo y correcto
- * - ✅ Interacciones complejas entre objetos
- * - ✅ Estados y cambios de estado
- * - ✅ Casos límite y excepciones
- * - ✅ Pruebas en MODO INVISIBLE (Canvas invisible = false)
- * 
- * MÉTODOS DE SILKROAD PROBADOS:
- * Públicos: getLength(), placeRobot(), placeStore(), moveRobot(), moveRobots(), 
- *           profit(), emptiedStores(), resupplyStores(), returnRobots(), 
- *           makeVisible(), makeInvisible(), profitPerMove(), finish()
- * 
- * Privados (indirectamente): addStoreToLocation(), crearTienda(), crearRobot(),
- *                            addRobotToLocation(), executeRobotMovement(),
- *                            validateRobotMovement(), encontrarPosicionRandom(),
- *                            calculateMaxProfitGreedy()
- * 
- * @author Sistema de Testing - Ciclo 3
- * @version 2.0 - EXHAUSTIVO
+ * Pruebas exhaustivas SilkRoad Ciclo 4
+ *
+ * Prueba todos los objetos nuevos y casos que evidencian su propósito.
+ *
+ * @author Juan Carlos Bohorquez y Juan Diego Valderrama
  */
-public class AppMapFullTestJUnit {
+public class SilkRoadCC4Test {
 
     private SilkRoad silkRoad;
     private static final int ROAD_LENGTH = 50;
@@ -41,156 +20,152 @@ public class AppMapFullTestJUnit {
     @Before
     public void setUp() {
         silkRoad = new SilkRoad(ROAD_LENGTH);
-        silkRoad.makeInvisible();  // Modo invisible para ejecutar más rápido
+        silkRoad.makeInvisible(); // Modo invisible para ejecutar más rápido
     }
 
-    // ============================================================
-    // PRUEBAS DE INICIALIZACIÓN Y ESTADO BASE
-    // ============================================================
 
     /**
-     * PRUEBA 1: Constructor y estado inicial
-     * Valida que SilkRoad se inicialice correctamente
+     * Prueba la inicialización y estado base de SilkRoad.
      */
     @Test
     public void testConstructorYEstadoInicial() {
         SilkRoad sr = new SilkRoad(100);
         sr.makeInvisible();
-        assertEquals("Longitud debe ser 100", 100, sr.getLength());
-        assertEquals("Profit inicial debe ser 0", 0, sr.profit());
+        assertEquals(100, sr.getLength());
+        assertEquals(0, sr.profit());
     }
 
     /**
-     * PRUEBA 2: RobotAbstracto y todas sus subclases
+     * Prueba la creación de todos los tipos de robots.
      */
     @Test
-    public void testTodasLasSubclasesDeRobot() {
+    public void testRobotsNuevos() {
         RobotAbstracto robot = new Robot(false);
-        assertNotNull("Robot debe no ser null", robot);
-        
+        assertNotNull(robot);
+
         RobotAbstracto tender = new TenderRobot(false);
-        assertNotNull("TenderRobot debe no ser null", tender);
-        
+        assertNotNull(tender);
+
         RobotAbstracto neverback = new NeverbackRobot(false);
-        assertNotNull("NeverbackRobot debe no ser null", neverback);
+        assertNotNull(neverback);
     }
 
     /**
-     * PRUEBA 3: StoreAbstracto y todas sus subclases
+     * Prueba la creación de todos los tipos de tiendas.
      */
     @Test
-    public void testTodasLasSubclasesDeStore() {
+    public void testTiendasNuevas() {
         StoreAbstracto store = new Store(false);
-        assertNotNull("Store debe no ser null", store);
-        
+        assertNotNull(store);
+
         StoreAbstracto fighter = new FighterStore(false);
-        assertNotNull("FighterStore debe no ser null", fighter);
-        
+        assertNotNull(fighter);
+
         StoreAbstracto casino = new CasinoStore(false);
-        assertNotNull("CasinoStore debe no ser null", casino);
-        
+        assertNotNull(casino);
+
         StoreAbstracto autonomous = new AutonomousStore(false);
-        assertNotNull("AutonomousStore debe no ser null", autonomous);
+        assertNotNull(autonomous);
     }
 
     /**
-     * PRUEBA 4: placeRobot() - versión simple
+     * Prueba la colocación de robots en SilkRoad.
      */
     @Test
-    public void testPlaceRobotSimple() {
-        silkRoad.placeRobot(100);
-        silkRoad.placeRobot(200);
-        silkRoad.placeRobot(50);
-        assertTrue("Robots colocados correctamente", true);
+    public void testColocacionRobots() {
+        silkRoad.placeRobot(10);
+        silkRoad.placeRobot(20);
+        silkRoad.placeRobot(30);
+        assertTrue(true);
     }
 
     /**
-     * PRUEBA 5: placeRobot con tipo
+     * Prueba la colocación de robots por tipo.
      */
     @Test
-    public void testPlaceRobotConTipo() {
+    public void testColocacionRobotsPorTipo() {
         SilkRoad sr = new SilkRoad(40);
         sr.makeInvisible();
         sr.placeRobot("normal", 10);
         sr.placeRobot("tender", 20);
         sr.placeRobot("neverback", 30);
-        assertTrue("Todos los tipos de robot se reconocen", true);
+        assertTrue(true);
     }
 
     /**
-     * PRUEBA 6: placeStore() - versión simple
+     * Prueba la colocación de tiendas en SilkRoad.
      */
     @Test
-    public void testPlaceStoreSimple() {
+    public void testColocacionTiendas() {
         silkRoad.placeStore(5, 100);
         silkRoad.placeStore(10, 200);
         silkRoad.placeStore(15, 75);
         silkRoad.placeStore(20, 150);
-        assertTrue("Tiendas colocadas correctamente", true);
+        assertTrue(true);
     }
 
     /**
-     * PRUEBA 7: placeStore con tipo
+     * Prueba la colocación de tiendas por tipo.
      */
     @Test
-    public void testPlaceStoreConTipo() {
+    public void testColocacionTiendasPorTipo() {
         SilkRoad sr = new SilkRoad(50);
         sr.makeInvisible();
         sr.placeStore("normal", 5, 100);
         sr.placeStore("fighter", 10, 100);
         sr.placeStore("casino", 15, 100);
         sr.placeStore("autonomous", 20, 100);
-        assertTrue("Todos los tipos de tienda se reconocen", true);
+        assertTrue(true);
     }
 
     /**
-     * PRUEBA 8: moveRobot() básico - Robot + Store
+     * Prueba el movimiento de robots y la interacción con tiendas.
      */
     @Test
-    public void testMoveRobotNormalConStoreNormal() {
+    public void testMovimientoRobotYInteraccionTienda() {
         SilkRoad sr = new SilkRoad(20);
         sr.makeInvisible();
-        sr.placeRobot(100);
-        sr.placeStore(5, 50);
+        sr.placeRobot(10);
+        sr.placeStore(15, 50);
         sr.moveRobot(0, 5);
-        assertTrue("Movimiento ejecutado", sr.profit() >= 0);
+        assertTrue(sr.profit() >= 0);
     }
 
     /**
-     * PRUEBA 9: TenderRobot transferencia
+     * Prueba la transferencia especial de TenderRobot.
      */
     @Test
-    public void testTenderRobotTransfiere50Porciento() {
+    public void testTenderRobotTransferencia() {
         SilkRoad sr = new SilkRoad(30);
         sr.makeInvisible();
-        sr.placeRobot(100);
-        sr.placeStore(10, 100);
+        sr.placeRobot(10);
+        sr.placeStore(20, 100);
         sr.moveRobot(0, 10);
-        assertTrue("TenderRobot transfiere", sr.profit() > 0);
+        assertTrue(sr.profit() > 0);
     }
 
     /**
-     * PRUEBA 10: NeverbackRobot dirección
+     * Prueba el comportamiento de dirección de NeverbackRobot.
      */
     @Test
     public void testNeverbackRobotDireccion() {
         SilkRoad sr = new SilkRoad(50);
         sr.makeInvisible();
-        sr.placeRobot(100);
-        sr.placeRobot(100);
-        sr.placeRobot(100);
-        sr.placeStore(10, 50);
-        sr.placeStore(20, 50);
+        sr.placeRobot(10);
+        sr.placeRobot(20);
+        sr.placeRobot(30);
+        sr.placeStore(15, 50);
+        sr.placeStore(25, 50);
         sr.moveRobot(2, 10);
         sr.moveRobot(2, 20);
-        assertTrue("NeverbackRobot respeta dirección", true);
+        assertTrue(true);
     }
 
     /**
-     * PRUEBA 11: FighterStore rechaza pobres
+     * Prueba el rechazo de robots pobres por FighterStore.
      */
     @Test
-    public void testFighterStoreRechazaPobres() {
+    public void testFighterStoreRechazo() {
         SilkRoad sr = new SilkRoad(30);
         sr.makeInvisible();
         sr.placeRobot(10);
@@ -198,33 +173,33 @@ public class AppMapFullTestJUnit {
         int profitBefore = sr.profit();
         sr.moveRobot(0, 10);
         int profitAfter = sr.profit();
-        assertTrue("FighterStore protege dinero", profitAfter >= profitBefore);
+        assertTrue(profitAfter >= profitBefore);
     }
 
     /**
-     * PRUEBA 12: CasinoStore transferencia
+     * Prueba la transferencia aleatoria de CasinoStore.
      */
     @Test
-    public void testCasinoStoreTransferenciaAleatoria() {
+    public void testCasinoStoreTransferencia() {
         SilkRoad sr1 = new SilkRoad(20);
         sr1.makeInvisible();
-        sr1.placeRobot(100);
-        sr1.placeStore("casino", 10, 100);
-        sr1.moveRobot(0, 10);
-        assertTrue("CasinoStore transfiere", sr1.profit() > 0);
+        sr1.placeRobot(10);
+        sr1.placeStore("casino", 15, 100);
+        sr1.moveRobot(0, 5);
+        assertTrue(sr1.profit() > 0);
     }
-
     /**
-     * PRUEBA 13: AutonomousStore posición aleatoria
+     * Prueba la colocación aleatoria de AutonomousStore.
      */
     @Test
-    public void testAutonomousStorePosicionAleatoria() {
+    public void testAutonomousStoreAleatoria() {
         SilkRoad sr = new SilkRoad(50);
         sr.makeInvisible();
-        sr.placeRobot(100);
+        sr.placeRobot(10);
         sr.placeStore("autonomous", 0, 100);
-        assertTrue("AutonomousStore colocado", true);
+        assertTrue(true);
     }
+    
 
     /**
      * PRUEBA 14: moveRobots() múltiples

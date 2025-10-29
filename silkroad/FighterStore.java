@@ -49,7 +49,7 @@ public class FighterStore extends StoreAbstracto {
 
     /**
      * Cambia el color de la base de la tienda.
-     * ✅ Se hereda de StoreAbstracto, pero personaliza para actualizar base
+     * Se hereda de StoreAbstracto, pero personaliza para actualizar base
      * 
      * @param newColor nuevo color (string)
      */
@@ -61,7 +61,7 @@ public class FighterStore extends StoreAbstracto {
 
     /**
      * Hace visible la tienda (si no lo estaba).
-     * ✅ Esta es la implementación específica de FighterStore
+     * Esta es la implementación específica de FighterStore
      */
     @Override
     public void makeVisible() {
@@ -74,7 +74,7 @@ public class FighterStore extends StoreAbstracto {
 
     /**
      * Hace invisible la tienda (si estaba visible).
-     * ✅ Esta es la implementación específica de FighterStore
+     * Esta es la implementación específica de FighterStore
      */
     @Override
     public void makeInvisible() {
@@ -85,10 +85,10 @@ public class FighterStore extends StoreAbstracto {
         }
     }
 
-    // ============== LÓGICA ESPECIAL DE FIGHTSTORE - FASE 5 ==============
+    
 
     /**
-     * ✅ SINGLE RESPONSIBILITY: FighterStore decide si acepta robots.
+     * SINGLE RESPONSIBILITY: FighterStore decide si acepta robots.
      * FighterStore rechaza robots débiles (tenges <= storeTenges).
      * 
      * Override de StoreAbstracto.puedeRecibirRobot()
@@ -105,11 +105,11 @@ public class FighterStore extends StoreAbstracto {
     }
 
     /**
-     * ✅ OPEN/CLOSED: FighterStore maneja su propia lógica de rechazo.
+     * OPEN/CLOSED: FighterStore maneja su propia lógica de rechazo.
      * Si fue rechazado, retorna 0 (no transfiere dinero).
      * Si fue aceptado, transfiere normalmente.
      * 
-     * ⚠️ IMPORTANTE: Este método se llama SOLO si puedeRecibirRobot() retorna true.
+     * IMPORTANTE: Este método se llama SOLO si puedeRecibirRobot() retorna true.
      * No es necesario verificar aquí; se asume que el robot fue validado.
      * 
      * @param tengesRecolectados cantidad de tenges que el robot recolectó
@@ -123,7 +123,7 @@ public class FighterStore extends StoreAbstracto {
     }
 
     /**
-     * ✅ ENCAPSULACIÓN: FighterStore genera su propio mensaje de rechazo.
+     * ENCAPSULACIÓN: FighterStore genera su propio mensaje de rechazo.
      * Solo se muestra si puedeRecibirRobot() retorna false (robot rechazado).
      * 
      * Mensaje personalizado para FighterStore:

@@ -55,7 +55,7 @@ public class CasinoStore extends StoreAbstracto {
 
     /**
      * Cambia el color de la base de la tienda.
-     * ✅ Se hereda de StoreAbstracto, pero personaliza para actualizar base
+     * Se hereda de StoreAbstracto, pero personaliza para actualizar base
      * 
      * @param newColor nuevo color (string)
      */
@@ -67,7 +67,7 @@ public class CasinoStore extends StoreAbstracto {
 
     /**
      * Hace visible la tienda (si no lo estaba).
-     * ✅ Esta es la implementación específica de CasinoStore
+     * Esta es la implementación específica de CasinoStore
      */
     @Override
     public void makeVisible() {
@@ -80,7 +80,7 @@ public class CasinoStore extends StoreAbstracto {
 
     /**
      * Hace invisible la tienda (si estaba visible).
-     * ✅ Esta es la implementación específica de CasinoStore
+     * Esta es la implementación específica de CasinoStore
      */
     @Override
     public void makeInvisible() {
@@ -93,7 +93,7 @@ public class CasinoStore extends StoreAbstracto {
 
 
     /**
-     * ✅ SINGLE RESPONSIBILITY: CasinoStore acepta a todos los robots.
+     *  SINGLE RESPONSIBILITY: CasinoStore acepta a todos los robots.
      * No hay restricciones especiales (no es como FighterStore).
      * 
      * Override de StoreAbstracto.puedeRecibirRobot()
@@ -109,7 +109,7 @@ public class CasinoStore extends StoreAbstracto {
     }
 
     /**
-     * ✅ OPEN/CLOSED: CasinoStore implementa lógica aleatoria de transferencia.
+     *  OPEN/CLOSED: CasinoStore implementa lógica aleatoria de transferencia.
      * 
      * El resultado depende de la suerte:
      * - 50% de posibilidad: recibe entre 50%-75% (MALA SUERTE)

@@ -20,11 +20,13 @@ public class SilkRoadC1Test {
 
     @Test
     public void accordingDAShouldAddAndRemoveObjects() {
-        silkRoad.placeRobot(100);
-        silkRoad.placeStore(10, 50);
-        // Verifica que el robot y la tienda fueron agregados
-        assertNotNull("Robot debe existir", silkRoad.getRobot(0));
-        assertNotNull("Tienda debe existir", silkRoad.getStore(10));
+    silkRoad.placeRobot(100);
+    silkRoad.placeStore(10, 50);
+    // Verifica que el robot y la tienda fueron agregados
+    // Un robot existe si la posición en robots tiene el índice correcto
+    assertTrue("Robot debe existir", silkRoad.robots()[100][0] == 100);
+    // Una tienda existe si la posición en stores tiene el índice correcto y tenges > 0
+    assertTrue("Tienda debe existir", silkRoad.stores()[10][0] == 10 && silkRoad.stores()[10][1] > 0);
     }
 
     @Test
@@ -63,5 +65,4 @@ public class SilkRoadC1Test {
         assertEquals("Profit debe ser 0 después de finish()", 0, silkRoad.profit());
     }
 }
-    }
-}
+

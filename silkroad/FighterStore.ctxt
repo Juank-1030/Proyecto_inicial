@@ -6,20 +6,20 @@ comment1.target=FighterStore(boolean)
 comment1.text=\r\n\ Construye\ una\ tienda\ defensiva\ con\ dimensiones\ est\u00E1ndar\ y\ color\ aleatorio.\r\n\ \r\n\ @param\ visible\ true\ para\ hacerla\ visible\ tras\ construir\r\n
 comment2.params=newColor
 comment2.target=void\ changeColor(java.lang.String)
-comment2.text=\r\n\ Cambia\ el\ color\ de\ la\ base\ de\ la\ tienda.\r\n\ \u2705\ Se\ hereda\ de\ StoreAbstracto,\ pero\ personaliza\ para\ actualizar\ base\r\n\ \r\n\ @param\ newColor\ nuevo\ color\ (string)\r\n
+comment2.text=\r\n\ Cambia\ el\ color\ de\ la\ base\ de\ la\ tienda.\r\n\ Se\ hereda\ de\ StoreAbstracto,\ pero\ personaliza\ para\ actualizar\ base\r\n\ \r\n\ @param\ newColor\ nuevo\ color\ (string)\r\n
 comment3.params=
 comment3.target=void\ makeVisible()
-comment3.text=\r\n\ Hace\ visible\ la\ tienda\ (si\ no\ lo\ estaba).\r\n\ \u2705\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ de\ FighterStore\r\n
+comment3.text=\r\n\ Hace\ visible\ la\ tienda\ (si\ no\ lo\ estaba).\r\n\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ de\ FighterStore\r\n
 comment4.params=
 comment4.target=void\ makeInvisible()
-comment4.text=\r\n\ Hace\ invisible\ la\ tienda\ (si\ estaba\ visible).\r\n\ \u2705\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ de\ FighterStore\r\n
+comment4.text=\r\n\ Hace\ invisible\ la\ tienda\ (si\ estaba\ visible).\r\n\ Esta\ es\ la\ implementaci\u00F3n\ espec\u00EDfica\ de\ FighterStore\r\n
 comment5.params=robotTenges\ storeTenges
 comment5.target=boolean\ puedeRecibirRobot(int,\ int)
-comment5.text=\r\n\ \u2705\ SINGLE\ RESPONSIBILITY\:\ FighterStore\ decide\ si\ acepta\ robots.\r\n\ FighterStore\ rechaza\ robots\ d\u00E9biles\ (tenges\ <\=\ storeTenges).\r\n\ \r\n\ Override\ de\ StoreAbstracto.puedeRecibirRobot()\r\n\ \r\n\ @param\ robotTenges\ tenges\ actuales\ del\ robot\r\n\ @param\ storeTenges\ tenges\ de\ la\ tienda\r\n\ @return\ true\ si\ robot\ es\ fuerte\ (tiene\ m\u00E1s\ dinero),\ false\ si\ es\ d\u00E9bil\r\n
+comment5.text=\r\n\ SINGLE\ RESPONSIBILITY\:\ FighterStore\ decide\ si\ acepta\ robots.\r\n\ FighterStore\ rechaza\ robots\ d\u00E9biles\ (tenges\ <\=\ storeTenges).\r\n\ \r\n\ Override\ de\ StoreAbstracto.puedeRecibirRobot()\r\n\ \r\n\ @param\ robotTenges\ tenges\ actuales\ del\ robot\r\n\ @param\ storeTenges\ tenges\ de\ la\ tienda\r\n\ @return\ true\ si\ robot\ es\ fuerte\ (tiene\ m\u00E1s\ dinero),\ false\ si\ es\ d\u00E9bil\r\n
 comment6.params=tengesRecolectados
 comment6.target=int\ procesarTransferencia(int)
-comment6.text=\r\n\ \u2705\ OPEN/CLOSED\:\ FighterStore\ maneja\ su\ propia\ l\u00F3gica\ de\ rechazo.\r\n\ Si\ fue\ rechazado,\ retorna\ 0\ (no\ transfiere\ dinero).\r\n\ Si\ fue\ aceptado,\ transfiere\ normalmente.\r\n\ \r\n\ \u26A0\uFE0F\ IMPORTANTE\:\ Este\ m\u00E9todo\ se\ llama\ SOLO\ si\ puedeRecibirRobot()\ retorna\ true.\r\n\ No\ es\ necesario\ verificar\ aqu\u00ED;\ se\ asume\ que\ el\ robot\ fue\ validado.\r\n\ \r\n\ @param\ tengesRecolectados\ cantidad\ de\ tenges\ que\ el\ robot\ recolect\u00F3\r\n\ @return\ cantidad\ de\ tenges\ a\ transferir\ (100%\ si\ fue\ aceptado)\r\n
+comment6.text=\r\n\ OPEN/CLOSED\:\ FighterStore\ maneja\ su\ propia\ l\u00F3gica\ de\ rechazo.\r\n\ Si\ fue\ rechazado,\ retorna\ 0\ (no\ transfiere\ dinero).\r\n\ Si\ fue\ aceptado,\ transfiere\ normalmente.\r\n\ \r\n\ IMPORTANTE\:\ Este\ m\u00E9todo\ se\ llama\ SOLO\ si\ puedeRecibirRobot()\ retorna\ true.\r\n\ No\ es\ necesario\ verificar\ aqu\u00ED;\ se\ asume\ que\ el\ robot\ fue\ validado.\r\n\ \r\n\ @param\ tengesRecolectados\ cantidad\ de\ tenges\ que\ el\ robot\ recolect\u00F3\r\n\ @return\ cantidad\ de\ tenges\ a\ transferir\ (100%\ si\ fue\ aceptado)\r\n
 comment7.params=robotTenges\ storeTenges
 comment7.target=java.lang.String\ obtenerMensajeRechazo(int,\ int)
-comment7.text=\r\n\ \u2705\ ENCAPSULACI\u00D3N\:\ FighterStore\ genera\ su\ propio\ mensaje\ de\ rechazo.\r\n\ Solo\ se\ muestra\ si\ puedeRecibirRobot()\ retorna\ false\ (robot\ rechazado).\r\n\ \r\n\ Mensaje\ personalizado\ para\ FighterStore\:\r\n\ -\ Comunica\ por\ qu\u00E9\ fue\ rechazado\ (robot\ d\u00E9bil)\r\n\ -\ Explica\ la\ condici\u00F3n\ (tenges\ del\ robot\ vs\ tenges\ de\ la\ tienda)\r\n\ -\ Sugiere\ acci\u00F3n\ (acumular\ m\u00E1s\ dinero)\r\n\ \r\n\ @param\ robotTenges\ tenges\ actuales\ del\ robot\ (usado\ en\ el\ mensaje)\r\n\ @param\ storeTenges\ tenges\ de\ la\ tienda\ (usado\ en\ el\ mensaje)\r\n\ @return\ mensaje\ descriptivo\ del\ rechazo\ por\ debilidad\r\n
+comment7.text=\r\n\ ENCAPSULACI\u00D3N\:\ FighterStore\ genera\ su\ propio\ mensaje\ de\ rechazo.\r\n\ Solo\ se\ muestra\ si\ puedeRecibirRobot()\ retorna\ false\ (robot\ rechazado).\r\n\ \r\n\ Mensaje\ personalizado\ para\ FighterStore\:\r\n\ -\ Comunica\ por\ qu\u00E9\ fue\ rechazado\ (robot\ d\u00E9bil)\r\n\ -\ Explica\ la\ condici\u00F3n\ (tenges\ del\ robot\ vs\ tenges\ de\ la\ tienda)\r\n\ -\ Sugiere\ acci\u00F3n\ (acumular\ m\u00E1s\ dinero)\r\n\ \r\n\ @param\ robotTenges\ tenges\ actuales\ del\ robot\ (usado\ en\ el\ mensaje)\r\n\ @param\ storeTenges\ tenges\ de\ la\ tienda\ (usado\ en\ el\ mensaje)\r\n\ @return\ mensaje\ descriptivo\ del\ rechazo\ por\ debilidad\r\n
 numComments=8

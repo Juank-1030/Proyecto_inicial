@@ -46,7 +46,7 @@ public class AutonomousStore extends StoreAbstracto {
 
     /**
      * Cambia el color de la base de la tienda.
-     * ✅ Se hereda de StoreAbstracto, pero personaliza para actualizar base
+     *  Se hereda de StoreAbstracto, pero personaliza para actualizar base
      * 
      * @param newColor nuevo color (string)
      */
@@ -58,7 +58,7 @@ public class AutonomousStore extends StoreAbstracto {
 
     /**
      * Hace visible la tienda (si no lo estaba).
-     * ✅ Esta es la implementación específica de AutonomousStore
+     *  Esta es la implementación específica de AutonomousStore
      */
     @Override
     public void makeVisible() {
@@ -71,7 +71,7 @@ public class AutonomousStore extends StoreAbstracto {
 
     /**
      * Hace invisible la tienda (si estaba visible).
-     * ✅ Esta es la implementación específica de AutonomousStore
+     *  Esta es la implementación específica de AutonomousStore
      */
     @Override
     public void makeInvisible() {
@@ -90,6 +90,6 @@ public class AutonomousStore extends StoreAbstracto {
      */
     @Override
     protected boolean necesitaPosicionAleatoria() {
-        return true;  // ✅ Siempre necesita posición aleatoria
+        return true;  //  Siempre necesita posición aleatoria
     }
 }
