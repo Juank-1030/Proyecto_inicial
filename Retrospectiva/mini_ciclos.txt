@@ -1,0 +1,40 @@
+Ciclo 4 - Retrospectiva
+
+1. ¿Cuáles fueron los mini-ciclos definidos? Justifíquenlos.
+
+Durante el desarrollo del proyecto, los mini-ciclos se definieron de la siguiente manera:
+
+- Actualización de las herencias: Se revisaron y ajustaron las clases base y abstractas para permitir una mejor extensibilidad y reutilización de código. Esto incluyó la refactorización de las clases `RobotAbstracto` y `StoreAbstracto`.
+- Agregar nuevos objetos: Se crearon nuevas subclases de robots y tiendas (por ejemplo, `TenderRobot`, `NeverbackRobot`, `FighterStore`, `CasinoStore`, `AutonomousStore`) para ampliar la funcionalidad y cubrir los nuevos requisitos del ciclo.
+- Realización de pruebas: Se implementaron y actualizaron los tests unitarios para validar el correcto funcionamiento de los nuevos objetos y métodos, asegurando la calidad y robustez del sistema.
+- Refactorización y delegación: Se mejoró la delegación de métodos y la estructura de herencia para facilitar la integración de nuevos objetos y comportamientos, siguiendo principios SOLID y buenas prácticas de diseño.
+- Validación y ajuste final: Se ejecutaron los tests, se corrigieron errores detectados y se ajustaron detalles de implementación para garantizar la completitud y extensibilidad del proyecto.
+
+Cada mini-ciclo fue justificado por la necesidad de mantener el proyecto flexible, escalable y fácil de mantener, permitiendo agregar nuevas funcionalidades sin afectar la estabilidad del sistema existente.
+
+2. ¿Cuál es el estado actual del proyecto en términos de mini-ciclos? ¿por qué?
+Completo, ya que pudimos realizar la extensibilidad del proyecto, agregando objetos y validando su funcionamiento mediante pruebas.
+
+3. ¿Cuál fue el tiempo total invertido por cada uno de ustedes? (Horas/Hombre)
+Juan Carlos Bohorquez Monroy: 10 hrs
+Juan Diego Valderrama: 9 hrs
+
+4. ¿Cuál consideran fue el mayor logro? ¿Por qué?
+Realizar la extensibilidad, actualizar las clases para ello y encontrar formas para hacerlo extensible, permitiendo agregar nuevos objetos sin romper la lógica existente.
+
+5. ¿Cuál consideran que fue el mayor problema técnico? ¿Qué hicieron para resolverlo?
+El mayor reto fue implementar los nuevos objetos y encontrar la mejor herencia para hacerlo. Se resolvió mediante refactorización, delegación de métodos y pruebas continuas.
+
+6. ¿Qué hicieron bien como equipo? ¿Qué se comprometen a hacer para mejorar los resultados?
+Programación en parejas, comunicación constante y revisión de código. Para mejorar, nos comprometemos a documentar mejor y planificar los mini-ciclos con mayor detalle.
+
+7. Considerando las prácticas XP incluidas en los laboratorios. ¿cuál fue la más útil? ¿por qué?
+Realizar pruebas, especialmente casos de prueba unitarios, fue la práctica más útil para asegurar la calidad y detectar errores rápidamente.
+
+8. ¿Qué referencias usaron? ¿Cuál fue la más útil? Incluyan citas con estándares adecuados.
+
+https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
+https://www.programiz.com/java-programming/inheritance
+https://www.geeksforgeeks.org/inheritance-in-java/
+https://medium.com/javarevisited/solid-design-principles-java-implementation-73c435a1b8e5
+https://www.baeldung.com/java-extensible-software
