@@ -183,19 +183,24 @@ public class NeverbackRobot extends RobotAbstracto {
     }
 
     /**
-     * FASE 4 OPCIÓN B: NeverbackRobot calcula ganancia con su lógica especial.
-     * NeverbackRobot es eficiente: reduce el costo de distancia en 10% por estar bloqueado.
-     * Ganancia = tenges recolectados - (distancia * 0.9)
-     * 
-     * @param tengesRecolectados cantidad de tenges obtenidos
-     * @param distancia metros recorridos
-     * @return ganancia neta mejorada por eficiencia de dirección única
+    * Calcula la ganancia neta del robot tras visitar una tienda.
+    *
+    * Regla de negocio actual: la ganancia es la cantidad de tenges que
+    * recolectó el robot menos la distancia absoluta recorrida para llegar
+    * a la tienda. No se aplica ningún "descuento" por eficiencia.
+    *
+    * Fórmula: ganancia = tengesRecolectados - |distancia|
+    *
+    * @param tengesRecolectados cantidad de tenges obtenidos de la tienda
+    * @param distancia desplazamiento (puede ser negativo o positivo)
+    * @return ganancia neta (tenges recolectados menos distancia absoluta)
      */
     @Override
     public int calcularGanancia(int tengesRecolectados, int distancia) {
-        // NeverbackRobot es más eficiente: costo de distancia reducido un 10%
-        int distanciaAjustada = (int)(distancia * 0.9);
-        return tengesRecolectados - distanciaAjustada;
+        // Ahora la ganancia es: tenges recolectados menos la distancia absoluta recorrida.
+        // Es decir, no hay 'descuento' por eficiencia aquí: se resta la distancia real.
+        int distanciaAbs = Math.abs(distancia);
+        return tengesRecolectados - distanciaAbs;
     }
 
     /**

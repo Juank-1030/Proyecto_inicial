@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72abc725-e52b-4b46-9e6a-9cc13f70224b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Astah/Proyecto_SilkRoad_Ciclo_4.asta" beforeDir="false" afterPath="$PROJECT_DIR$/Astah/Proyecto_SilkRoad_Ciclo_4.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Astah/Proyecto_SilkRoad_Ciclo_4.asta.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SilkRoadC1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/test/SilkRoadC1Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/test/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluej.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/bluej.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/silkroad/bluej.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/silkroad/bluej.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/silkroad/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/silkroad/package.bluej" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,33 +26,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.All in Proyecto_ciclo1-copy.executor": "Run",
-    "JUnit.SilkRoadC2Test.testConstructorInicializaCorrectamente.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "appmap.toolWindow.appMaps.collapsed": "true",
-    "appmap.toolWindow.documentation.collapsed": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Settings.Sequence.Configuration",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in Proyecto_ciclo1-copy.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SilkRoadC2Test.testConstructorInicializaCorrectamente.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;appmap.toolWindow.appMaps.collapsed&quot;: &quot;true&quot;,
+    &quot;appmap.toolWindow.documentation.collapsed&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Sequence.Configuration&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.SilkRoadC2Test.testConstructorInicializaCorrectamente">
     <configuration name="All in Proyecto_ciclo1-copy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proyecto_ciclo1-copy" />
@@ -137,6 +137,7 @@
       <workItem from="1761660317204" duration="3263000" />
       <workItem from="1761686208220" duration="59000" />
       <workItem from="1761710067235" duration="1595000" />
+      <workItem from="1761756680706" duration="17000" />
     </task>
     <servers />
   </component>
