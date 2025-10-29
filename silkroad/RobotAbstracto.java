@@ -57,8 +57,8 @@ public abstract class RobotAbstracto {
      * Llama a updateParts() para que cada robot actualice sus partes de forma
      * específica.
      * 
-     * ✅ Este método NO se duplica en subclases
-     * ✅ Las subclases solo cambian getSpeed() o updateParts() si es necesario
+     * Este método NO se duplica en subclases
+     * Las subclases solo cambian getSpeed() o updateParts() si es necesario
      */
     protected void slowMoveTo(int targetX, int targetY) {
         int deltaX = targetX - positionX;
@@ -102,7 +102,7 @@ public abstract class RobotAbstracto {
      * Inicializa todas las partes visuales del robot (cabeza, ojos, boca).
      * Este método CENTRALIZA la construcción visual para evitar duplicación.
      * 
-     * ✅ LLAMAR en el constructor de cada subclase así:
+     * LLAMAR en el constructor de cada subclase así:
      * super(visible);
      * this.size = 15; // Personalizar tamaño si es necesario
      * this.positionX = 36;
@@ -154,7 +154,7 @@ public abstract class RobotAbstracto {
      * actuales.
      * DEBE ser implementado por cada subclase con su lógica específica.
      * 
-     * ✅ Esta es la única parte que cada robot debe personalizar
+     * Esta es la única parte que cada robot debe personalizar
      */
     protected abstract void updateParts();
 
@@ -176,7 +176,7 @@ public abstract class RobotAbstracto {
      * Por defecto, el robot recolecta TODOS los tenges disponibles.
      * Las subclases pueden sobrescribir para comportamiento especial.
      * 
-     * ✅ MEDIATOR: Robot solo recibe cantidad, NO conoce a la Store
+     * MEDIATOR: Robot solo recibe cantidad, NO conoce a la Store
      * Road actúa como intermediario entre Robot y Store.
      * 
      * Ejemplo de polimorfismo:

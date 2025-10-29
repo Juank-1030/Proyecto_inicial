@@ -190,7 +190,7 @@ public class AppMapFullTestJUnit {
      * PRUEBA 11: FighterStore rechaza pobres
      */
     @Test
-    public void testFighterStoreRechaazaPobres() {
+    public void testFighterStoreRechazaPobres() {
         SilkRoad sr = new SilkRoad(30);
         sr.makeInvisible();
         sr.placeRobot(10);
@@ -218,7 +218,7 @@ public class AppMapFullTestJUnit {
      * PRUEBA 13: AutonomousStore posición aleatoria
      */
     @Test
-    public void testAutonomousStoreposicionAleatoria() {
+    public void testAutonomousStorePosicionAleatoria() {
         SilkRoad sr = new SilkRoad(50);
         sr.makeInvisible();
         sr.placeRobot(100);

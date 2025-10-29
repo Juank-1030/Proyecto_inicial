@@ -9,7 +9,6 @@ import javax.swing.JOptionPane;
  * movimientos, profit y visualización.
  *
  * @author Juan Carlos Bohorquez y Juan Diego Valderrama
- * @version 3.5
  */
 public class SilkRoad {
     private final int length; // Longitud de la SilkRoad
@@ -69,12 +68,6 @@ public class SilkRoad {
 
     /**
      * Constructor que inicializa la SilkRoad con un schedule de eventos diarios.
-     * Cada evento en el schedule es un array:
-     * - [1, x] para colocar un robot en la posición x
-     * - [2, x, c] para colocar una tienda en la posición x con c tenges
-     *
-     * El primer elemento del schedule (schedule[0]) debe ser [n, 0] donde n es
-     * el número total de reboots (días) que se simularán.
      *
      * @param schedule matriz de eventos diarios
      */
@@ -122,13 +115,20 @@ public class SilkRoad {
         this.originalStoreTenges = new int[length + 1]; // Inicializar a 0 por defecto
     }
 
+    /**
+     * Devuelve la longitud de la SilkRoad.
+     *
+     * @return longitud de la SilkRoad
+     */
     public int getLength() {
         return length;
     }
 
+    /**
+     * Muestra el profit acumulado por cada ubicación.
+     */
     public void profitPerMove() {
         boolean found = false;
-
         String message = "Profit por ubicación:\n";
         for (int i = 0; i < profitPerLocation.length; i++) {
             if (profitPerLocation[i][1] > 0) {
@@ -137,7 +137,6 @@ public class SilkRoad {
                 found = true;
             }
         }
-
         if (found) {
             JOptionPane.showMessageDialog(
                     null,
@@ -157,23 +156,18 @@ public class SilkRoad {
      * Coloca una tienda normal en la ubicación dada si está libre.
      *
      * @param location índice de la celda
-     * @param tenges   cantidad inicial de tenges en la tienda
+     * @param tenges cantidad inicial de tenges en la tienda
      */
     public void placeStore(int location, int tenges) {
         placeStore("normal", location, tenges);
     }
 
     /**
-     * ✅ SOBRECARGADO: Coloca una tienda según tipo
-     * 
-     * Crea y posiciona tienda según el tipo especificado:
-     * - "normal" → Store en posición indicada
-     * - "autonomous" → AutonomousStore elige posición aleatoria
-     * - "fighter" → FighterStore en posición indicada
-     * 
-     * @param type     tipo de tienda ("normal", "autonomous" o "fighter")
-     * @param location ubicación para la tienda (ignorada si es autónoma)
-     * @param tenges   cantidad inicial de tenges en la tienda
+     * Coloca una tienda según el tipo especificado.
+     *
+     * @param type tipo de tienda
+     * @param location ubicación para la tienda
+     * @param tenges cantidad inicial de tenges
      */
     public void placeStore(String type, int location, int tenges) {
         // Crear tienda según tipo
@@ -342,10 +336,7 @@ public class SilkRoad {
     }
 
     /**
-     * Muestra un mensaje con la lista de tiendas que están vacías (tienen 0
-     * tenges).
-     * Cambia el color de las tiendas vacías a negro para resaltarlas visualmente.
-     * Si no hay tiendas vacías, muestra un mensaje informativo.
+     * Muestra las tiendas que están vacías.
      */
     public void emptiedStores() {
         boolean found = false;
@@ -376,10 +367,6 @@ public class SilkRoad {
 
     /**
      * Restaura todas las tiendas a su valor original de tenges.
-     * Para cada tienda activa, recupera el valor original registrado y lo repone si
-     * es necesario.
-     * Ajusta el profit máximo acumulado y actualiza la barra de progreso.
-     * Muestra un mensaje informativo al finalizar.
      */
     public void resupplyStores() {
         for (int i = 0; i < stores.length; i++) {

@@ -22,7 +22,9 @@ public class SilkRoadC1Test {
     public void accordingDAShouldAddAndRemoveObjects() {
         silkRoad.placeRobot(100);
         silkRoad.placeStore(10, 50);
-        assertTrue("Objetos agregados correctamente", true);
+        // Verifica que el robot y la tienda fueron agregados
+        assertNotNull("Robot debe existir", silkRoad.getRobot(0));
+        assertNotNull("Tienda debe existir", silkRoad.getStore(10));
     }
 
     @Test
@@ -57,9 +59,9 @@ public class SilkRoadC1Test {
     @Test
     public void accordingDAShouldCleanupWithFinish() {
         silkRoad.placeRobot(100);
-        silkRoad.placeStore(10, 50);
-        silkRoad.moveRobot(0, 10);
         silkRoad.finish();
-        assertTrue("finish() ejecutado", true);
+        assertEquals("Profit debe ser 0 después de finish()", 0, silkRoad.profit());
+    }
+}
     }
 }

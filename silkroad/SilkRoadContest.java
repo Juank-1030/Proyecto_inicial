@@ -6,22 +6,7 @@ import java.util.*;
  * Clase que simula un concurso en la Ruta de la Seda con robots y tiendas.
  * Permite calcular la ganancia máxima posible a través de eventos progresivos.
  *
- * <p>
- * La clase maneja la posición de los robots, las tiendas y sus tenges
- * disponibles.
- * Proporciona métodos para resolver el problema numéricamente y para simular
- * visualmente el proceso en una interfaz gráfica.
- * </p>
- *
- * <p>
- * El método principal {@link #solve(int[][])} calcula la ganancia máxima
- * para una serie de eventos sin usar la simulación gráfica, mientras que
- * {@link #simulate(int[][], boolean)} ejecuta una simulación visual completa
- * con opciones de velocidad.
- * </p>
- *
- * @version 1.0
- * @since 2024-06
+ * @author Juan Carlos Bohorquez y Juan Diego Valderrama
  */
 public class SilkRoadContest {
 
@@ -45,17 +30,9 @@ public class SilkRoadContest {
 
     /**
      * Resuelve el problema de la Ruta de la Seda para una serie de eventos.
-     * Cada evento puede ser la aparición de un robot o una tienda con tenges.
-     * Calcula la ganancia máxima posible progresivamente y aplica una optimización
-     * para eventos posteriores al punto de ganancia máxima.
      *
-     * @param days arreglo bidimensional donde:
-     *             - days[0][0] es el número total de eventos.
-     *             - days[i] (i>0) es un evento con formato [tipo, posición,
-     *             tenges?]
-     *             donde tipo=1 (robot), tipo=2 (tienda con tenges).
-     * @return arreglo unidimensional con la ganancia máxima después de cada evento,
-     *         aplicando la optimización descrita.
+     * @param days arreglo de eventos: cada evento es [tipo, posición, tenges?]
+     * @return arreglo con la ganancia máxima después de cada evento
      */
     public static int[] solve(int[][] days) {
         if (days == null || days.length < 2)
