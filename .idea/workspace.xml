@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72abc725-e52b-4b46-9e6a-9cc13f70224b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Astah/Proyecto_SilkRoad_Ciclo_4.asta" beforeDir="false" afterPath="$PROJECT_DIR$/Astah/Proyecto_SilkRoad_Ciclo_4.asta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Astah/Proyecto_SilkRoad_Ciclo_4.asta.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SilkRoadC1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/test/SilkRoadC1Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/test/package.bluej" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="33Zeu0qARhw2ai44eq3qbQ24VnQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.All in Proyecto_ciclo1-copy.executor": "Run",
+    "JUnit.SilkRoadC2Test.testConstructorInicializaCorrectamente.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "appmap.toolWindow.appMaps.collapsed": "true",
+    "appmap.toolWindow.documentation.collapsed": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Settings.Sequence.Configuration",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.SilkRoadC2Test.testConstructorInicializaCorrectamente">
+    <configuration name="All in Proyecto_ciclo1-copy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto_ciclo1-copy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SilkRoadC2Test.testConstructorInicializaCorrectamente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto_ciclo1-copy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SilkRoadC2Test" />
+      <option name="METHOD_NAME" value="testConstructorInicializaCorrectamente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SilkRoadC2Test.testConstructorInicializaCorrectamente" />
+        <item itemvalue="JUnit.All in Proyecto_ciclo1-copy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72abc725-e52b-4b46-9e6a-9cc13f70224b" name="Changes" comment="" />
+      <created>1759529240676</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759529240676</updated>
+      <workItem from="1759529242116" duration="37000" />
+      <workItem from="1759529405294" duration="601000" />
+      <workItem from="1759530030510" duration="159000" />
+      <workItem from="1759530382166" duration="110000" />
+      <workItem from="1759530512998" duration="127000" />
+      <workItem from="1759660357290" duration="1937000" />
+      <workItem from="1759662577456" duration="264000" />
+      <workItem from="1759662864632" duration="2780000" />
+      <workItem from="1759717382672" duration="4156000" />
+      <workItem from="1759722636361" duration="9000" />
+      <workItem from="1759722667519" duration="401000" />
+      <workItem from="1759723354951" duration="104000" />
+      <workItem from="1759723484442" duration="147000" />
+      <workItem from="1759723653447" duration="287000" />
+      <workItem from="1759723976255" duration="208000" />
+      <workItem from="1759724205847" duration="654000" />
+      <workItem from="1759724887555" duration="86000" />
+      <workItem from="1759725011006" duration="66000" />
+      <workItem from="1759725096956" duration="1260000" />
+      <workItem from="1759980523567" duration="4648000" />
+      <workItem from="1760148455912" duration="277000" />
+      <workItem from="1760148768076" duration="1911000" />
+      <workItem from="1760150720043" duration="18000" />
+      <workItem from="1760150753629" duration="9472000" />
+      <workItem from="1760161181277" duration="2757000" />
+      <workItem from="1760164016084" duration="35000" />
+      <workItem from="1760164079413" duration="8092000" />
+      <workItem from="1760202496312" duration="13137000" />
+      <workItem from="1760393756681" duration="2067000" />
+      <workItem from="1760643227025" duration="929000" />
+      <workItem from="1760662284464" duration="2646000" />
+      <workItem from="1760742106361" duration="1079000" />
+      <workItem from="1760753642556" duration="14000" />
+      <workItem from="1760753788353" duration="11000" />
+      <workItem from="1760753939155" duration="16000" />
+      <workItem from="1761604086881" duration="1208000" />
+      <workItem from="1761605733941" duration="7000" />
+      <workItem from="1761605764699" duration="198000" />
+      <workItem from="1761606229557" duration="4376000" />
+      <workItem from="1761623020690" duration="596000" />
+      <workItem from="1761660317204" duration="3263000" />
+      <workItem from="1761686208220" duration="59000" />
+      <workItem from="1761710067235" duration="1595000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
