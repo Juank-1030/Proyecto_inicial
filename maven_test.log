@@ -1,620 +1,0 @@
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] -------------------< com.silkroad:silkroad-project >--------------------
-[INFO] Building Proyecto SilkRoad - Ciclo 3 3.0
-[INFO]   from pom.xml
-[INFO] --------------------------------[ jar ]---------------------------------
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar
-Progress (1): 0.9/211 kBProgress (1): 2.3/211 kBProgress (1): 3.6/211 kBProgress (1): 5.0/211 kBProgress (1): 6.4/211 kBProgress (1): 7.7/211 kBProgress (1): 9.1/211 kBProgress (1): 10/211 kB Progress (1): 12/211 kBProgress (1): 13/211 kBProgress (1): 15/211 kBProgress (1): 16/211 kBProgress (1): 17/211 kBProgress (1): 19/211 kBProgress (1): 20/211 kBProgress (1): 21/211 kBProgress (1): 23/211 kBProgress (1): 24/211 kBProgress (1): 26/211 kBProgress (1): 27/211 kBProgress (1): 28/211 kBProgress (1): 30/211 kBProgress (1): 31/211 kBProgress (1): 32/211 kBProgress (1): 34/211 kBProgress (1): 35/211 kBProgress (1): 36/211 kBProgress (1): 38/211 kBProgress (1): 39/211 kBProgress (1): 41/211 kBProgress (1): 42/211 kBProgress (1): 43/211 kBProgress (1): 45/211 kBProgress (1): 46/211 kBProgress (1): 47/211 kBProgress (1): 49/211 kBProgress (1): 50/211 kBProgress (1): 52/211 kBProgress (1): 53/211 kBProgress (1): 54/211 kBProgress (1): 56/211 kBProgress (1): 60/211 kBProgress (1): 64/211 kBProgress (1): 68/211 kBProgress (1): 73/211 kBProgress (1): 77/211 kBProgress (1): 81/211 kBProgress (1): 85/211 kBProgress (1): 89/211 kBProgress (1): 94/211 kBProgress (1): 98/211 kBProgress (1): 102/211 kBProgress (1): 106/211 kBProgress (1): 111/211 kBProgress (1): 115/211 kBProgress (1): 119/211 kBProgress (1): 123/211 kBProgress (1): 128/211 kBProgress (1): 131/211 kBProgress (1): 135/211 kBProgress (1): 139/211 kBProgress (1): 143/211 kBProgress (1): 147/211 kBProgress (1): 152/211 kBProgress (1): 156/211 kBProgress (1): 160/211 kBProgress (1): 164/211 kBProgress (1): 169/211 kBProgress (1): 173/211 kBProgress (1): 177/211 kBProgress (1): 179/211 kBProgress (1): 184/211 kBProgress (1): 188/211 kBProgress (1): 192/211 kBProgress (1): 196/211 kBProgress (1): 200/211 kBProgress (1): 205/211 kBProgress (1): 209/211 kBProgress (1): 211 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar (211 kB at 244 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar
-Progress (1): 3.8/244 kBProgress (1): 8.0/244 kBProgress (1): 20/244 kB Progress (1): 36/244 kBProgress (1): 53/244 kBProgress (1): 69/244 kBProgress (1): 86/244 kBProgress (1): 102/244 kBProgress (1): 118/244 kBProgress (1): 129/244 kBProgress (1): 145/244 kBProgress (1): 162/244 kBProgress (1): 166/244 kBProgress (1): 182/244 kBProgress (1): 198/244 kBProgress (1): 202/244 kBProgress (1): 219/244 kBProgress (1): 235/244 kBProgress (1): 244 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar (244 kB at 2.5 MB/s)
-Progress (1): 0.9/106 kBProgress (1): 2.3/106 kBProgress (1): 3.7/106 kBProgress (1): 5.0/106 kBProgress (1): 6.4/106 kBProgress (1): 7.8/106 kBProgress (1): 9.1/106 kBProgress (1): 11/106 kB Progress (1): 12/106 kBProgress (1): 13/106 kBProgress (1): 15/106 kBProgress (1): 16/106 kBProgress (1): 17/106 kBProgress (1): 19/106 kBProgress (1): 20/106 kBProgress (1): 21/106 kBProgress (1): 23/106 kBProgress (1): 24/106 kBProgress (1): 26/106 kBProgress (1): 27/106 kBProgress (1): 28/106 kBProgress (1): 30/106 kBProgress (1): 31/106 kBProgress (1): 32/106 kBProgress (1): 34/106 kBProgress (1): 35/106 kBProgress (1): 37/106 kBProgress (1): 38/106 kBProgress (1): 39/106 kBProgress (1): 41/106 kBProgress (1): 42/106 kBProgress (1): 43/106 kBProgress (1): 45/106 kBProgress (1): 46/106 kBProgress (1): 47/106 kBProgress (1): 49/106 kBProgress (1): 50/106 kBProgress (1): 52/106 kBProgress (1): 53/106 kBProgress (1): 54/106 kBProgress (1): 56/106 kBProgress (1): 60/106 kBProgress (1): 64/106 kBProgress (1): 66/106 kBProgress (1): 70/106 kBProgress (2): 70/106 kB | 0.9/205 kBProgress (2): 70/106 kB | 2.3/205 kBProgress (2): 74/106 kB | 2.3/205 kBProgress (2): 74/106 kB | 3.7/205 kBProgress (2): 74/106 kB | 3.7/205 kBProgress (2): 78/106 kB | 3.7/205 kBProgress (2): 78/106 kB | 5.1/205 kBProgress (2): 78/106 kB | 6.5/205 kBProgress (2): 82/106 kB | 6.5/205 kBProgress (2): 82/106 kB | 7.8/205 kBProgress (2): 87/106 kB | 7.8/205 kBProgress (2): 87/106 kB | 9.2/205 kBProgress (2): 91/106 kB | 9.2/205 kBProgress (2): 91/106 kB | 11/205 kB Progress (2): 91/106 kB | 12/205 kBProgress (2): 95/106 kB | 12/205 kBProgress (2): 95/106 kB | 13/205 kBProgress (2): 99/106 kB | 13/205 kBProgress (2): 99/106 kB | 15/205 kBProgress (2): 104/106 kB | 15/205 kBProgress (2): 104/106 kB | 16/205 kBProgress (2): 106 kB | 16/205 kB    Progress (2): 106 kB | 17/205 kBProgress (2): 106 kB | 19/205 kBProgress (2): 106 kB | 20/205 kBProgress (2): 106 kB | 22/205 kBProgress (2): 106 kB | 23/205 kBProgress (2): 106 kB | 24/205 kBProgress (2): 106 kB | 26/205 kBProgress (2): 106 kB | 27/205 kBProgress (2): 106 kB | 28/205 kBProgress (2): 106 kB | 30/205 kBProgress (2): 106 kB | 31/205 kBProgress (2): 106 kB | 32/205 kBProgress (2): 106 kB | 34/205 kBProgress (2): 106 kB | 35/205 kBProgress (2): 106 kB | 37/205 kBProgress (2): 106 kB | 38/205 kBProgress (2): 106 kB | 39/205 kBProgress (2): 106 kB | 41/205 kBProgress (2): 106 kB | 42/205 kBProgress (2): 106 kB | 43/205 kBProgress (2): 106 kB | 45/205 kBProgress (2): 106 kB | 46/205 kBProgress (2): 106 kB | 48/205 kBProgress (2): 106 kB | 49/205 kBProgress (2): 106 kB | 50/205 kBProgress (2): 106 kB | 52/205 kBProgress (2): 106 kB | 53/205 kBProgress (2): 106 kB | 54/205 kBProgress (2): 106 kB | 58/205 kBProgress (2): 106 kB | 63/205 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar (106 kB at 322 kB/s)
-Progress (1): 67/205 kBProgress (1): 71/205 kBProgress (1): 75/205 kBProgress (1): 80/205 kBProgress (1): 84/205 kBProgress (1): 88/205 kBProgress (1): 92/205 kBProgress (1): 97/205 kBProgress (1): 101/205 kBProgress (1): 105/205 kBProgress (1): 109/205 kBProgress (1): 113/205 kBProgress (1): 118/205 kBProgress (1): 118/205 kBProgress (1): 123/205 kBProgress (1): 127/205 kBProgress (1): 131/205 kBProgress (1): 135/205 kBProgress (1): 140/205 kBProgress (1): 144/205 kBProgress (1): 148/205 kBProgress (1): 152/205 kBProgress (1): 156/205 kBProgress (1): 161/205 kBProgress (1): 165/205 kBProgress (1): 169/205 kBProgress (1): 173/205 kBProgress (1): 178/205 kBProgress (1): 179/205 kBProgress (1): 184/205 kBProgress (1): 188/205 kBProgress (1): 192/205 kBProgress (1): 196/205 kBProgress (1): 201/205 kBProgress (1): 205/205 kBProgress (1): 205 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar (205 kB at 455 kB/s)
-[INFO] 
-[INFO] --- clean:3.2.0:clean (default-clean) @ silkroad-project ---
-[INFO] Deleting E:\DOPO\3cer_ciclo\Proyecto_ciclo3_inicial\target
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ silkroad-project ---
-[INFO] Copying 2 resources from  to target\classes
-[INFO] 
-[INFO] --- compiler:3.11.0:compile (default-compile) @ silkroad-project ---
-[INFO] Changes detected - recompiling the module! :source
-[INFO] Compiling 20 source files with javac [debug release 21] to target\classes
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ silkroad-project ---
-[INFO] Copying 2 resources from  to target\classes
-[INFO] 
-[INFO] --- compiler:3.11.0:compile (default-compile) @ silkroad-project ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ silkroad-project ---
-[INFO] skip non existing resourceDirectory E:\DOPO\3cer_ciclo\Proyecto_ciclo3_inicial\src\test\resources
-[INFO] 
-[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ silkroad-project ---
-[INFO] Changes detected - recompiling the module! :dependency
-[INFO] Compiling 24 source files with javac [debug release 21] to target\test-classes
-[INFO] -------------------------------------------------------------
-[ERROR] COMPILATION ERROR : 
-[INFO] -------------------------------------------------------------
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[3,24] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[4,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[3,24] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[4,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[5,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[3,24] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[4,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[3,24] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[4,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[85,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[103,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[131,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[160,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[181,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[202,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[223,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[249,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[269,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[311,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[337,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[111,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[130,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[148,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[167,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[187,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[210,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[231,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[253,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[283,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[303,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[327,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[348,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[367,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[386,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[407,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[427,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[447,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[468,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[490,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[507,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[128,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[137,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[146,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[155,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[164,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[173,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[182,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[191,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[201,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[57,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[82,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[112,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[127,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[138,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[160,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[184,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[208,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[229,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[248,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[279,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[301,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[317,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[342,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[367,6] cannot find symbol
-  symbol:   class Test
-  location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[90,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[91,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[92,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[93,9] cannot find symbol
-  symbol:   method assertNotNull(java.lang.String,int[][])
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[94,9] cannot find symbol
-  symbol:   method assertNotNull(java.lang.String,int[][])
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[119,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[120,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[121,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[122,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[123,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[142,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[143,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[149,9] cannot find symbol
-  symbol:   method assertFalse(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[150,9] cannot find symbol
-  symbol:   method assertFalse(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[151,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[152,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[171,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[172,9] cannot find symbol
-  symbol:   method assertFalse(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[173,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[192,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[193,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[213,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[214,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[234,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[235,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[239,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[240,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[261,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[281,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[286,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[304,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[305,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[320,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[321,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[326,9] cannot find symbol
-  symbol:   method assertTrue(java.lang.String,boolean)
-  location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[327,9] cannot find symbol
-  symbol:   method assertEquals(java.lang.String,int,int)
-  location: class test.SilkRoadC1Test
-[INFO] 100 errors 
-[INFO] -------------------------------------------------------------
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  12.357 s
-[INFO] Finished at: 2025-10-27T21:06:19-05:00
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile) on project silkroad-project: Compilation failure: Compilation failure: 
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[3,24] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[4,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[3,24] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[4,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[5,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[3,24] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[4,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[3,24] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[4,17] package org.junit does not exist
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[85,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[103,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[131,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[160,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[181,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[202,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[223,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[249,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[269,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[311,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[337,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[111,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[130,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[148,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[167,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[187,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[210,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[231,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[253,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[283,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[303,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[327,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[348,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[367,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[386,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[407,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[427,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[447,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[468,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[490,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestCTest.java:[507,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestCTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[128,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[137,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[146,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[155,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[164,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[173,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[182,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[191,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadCC2Test.java:[201,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadCC2Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[57,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[82,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[112,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[127,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[138,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[160,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[184,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[208,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[229,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[248,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[279,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[301,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[317,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[342,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadContestTest.java:[367,6] cannot find symbol
-[ERROR]   symbol:   class Test
-[ERROR]   location: class test.SilkRoadContestTest
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[90,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[91,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[92,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[93,9] cannot find symbol
-[ERROR]   symbol:   method assertNotNull(java.lang.String,int[][])
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[94,9] cannot find symbol
-[ERROR]   symbol:   method assertNotNull(java.lang.String,int[][])
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[119,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[120,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[121,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[122,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[123,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[142,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[143,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[149,9] cannot find symbol
-[ERROR]   symbol:   method assertFalse(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[150,9] cannot find symbol
-[ERROR]   symbol:   method assertFalse(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[151,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[152,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[171,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[172,9] cannot find symbol
-[ERROR]   symbol:   method assertFalse(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[173,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[192,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[193,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[213,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[214,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[234,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[235,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[239,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[240,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[261,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[281,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[286,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[304,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[305,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[320,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[321,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[326,9] cannot find symbol
-[ERROR]   symbol:   method assertTrue(java.lang.String,boolean)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] /E:/DOPO/3cer_ciclo/Proyecto_ciclo3_inicial/test/SilkRoadC1Test.java:[327,9] cannot find symbol
-[ERROR]   symbol:   method assertEquals(java.lang.String,int,int)
-[ERROR]   location: class test.SilkRoadC1Test
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
